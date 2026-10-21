@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore 2-3 Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Árvore 2-3</h1>
+        <div class="controls">
+            <input type="number" id="valorInput" placeholder="Digite um número">
+            <button onclick="inserirValor()">Inserir</button>
+            <button onclick="removerValor()">Remover</button>
+        </div>
+    </header>
 
+    <!-- Área onde a árvore vai aparecer -->
+    <main id="arvore-container">
+        <!-- Um nó de exemplo fixo apenas para você ver o design hoje -->
+        <div class="node-example">
+            <div class="node">
+                <div class="key">10</div>
+                <div class="key empty"></div>
+            </div>
+            <p>Exemplo de Nó: [10][ ]</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
