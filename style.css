@@ -1,1 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-left: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.controls button:hover {
+    background-color: #218838;
+}
+
+#arvore-container {
+    width: 100%;
+    min-height: 400px;
+    background: white;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* --- ESTILO DO NÓ [INFO1][INFO2] --- */
+.node {
+    display: flex;
+    border: 2px solid #333;
+    border-radius: 6px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-right: 2px solid #333;
+}
+
+.key:last-child {
+    border-right: none;
+}
+
+.key.empty {
+    background-color: #e9ecef;
+}
+
+.node-example {
+    text-align: center;
+    color: #666;
+}
